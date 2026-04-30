@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0F14">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Create New Advert"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:letterSpacing="-0.02"
+            android:layout_marginBottom="4dp" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/radioLost"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Lost"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center"
+
+                android:buttonTint="#6382DC"
+                android:layout_marginEnd="8dp" />
+
+            <RadioButton
+                android:id="@+id/radioFound"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Found"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:buttonTint="#6382DC" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#6382DC"
+            android:letterSpacing="0.12"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:hint="e.g. Earphone"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#44FFFFFF"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="#1AFFFFFF"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE NUMBER"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#6382DC"
+            android:letterSpacing="0.12"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:hint="Your contact number"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#44FFFFFF"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="#1AFFFFFF"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESCRIPTION"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#6382DC"
+            android:letterSpacing="0.12"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:hint="Describe the item detail"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#44FFFFFF"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:gravity="top"
+            android:background="#1AFFFFFF"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#6382DC"
+            android:letterSpacing="0.12"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:hint="Tap to select date"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#44FFFFFF"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="#1AFFFFFF"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOCATION"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#6382DC"
+            android:letterSpacing="0.12"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:hint="Where was it lost or found?"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#44FFFFFF"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="#1AFFFFFF"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CATEGORY"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#6382DC"
+            android:letterSpacing="0.12"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="#1AFFFFFF"
+            android:layout_marginBottom="24dp" />
+
+
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:text="Upload Image"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#6382DC"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="#0D6382DC"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="#1AFFFFFF"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Save"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="56dp"
+            android:layout_width="300dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#6382DC"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>

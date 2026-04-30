@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D0F14">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lost &amp; Found Items"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingTop="45dp"
+            android:paddingBottom="26dp"
+            android:letterSpacing="-0.02"
+            android:padding="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FILTER BY CATEGORY"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#6382DC"
+        android:letterSpacing="0.12"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="6dp" />
+
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="#1AFFFFFF"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Back button at bottom -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="52dp"
+        android:text="← Back to Home Page"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:backgroundTint="#1AFFFFFF"
+        android:layout_margin="16dp" />
+
+</LinearLayout>
